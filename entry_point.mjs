@@ -1,4 +1,4 @@
-import { init, main } from "../build/dev/javascript/factorio/factorio.mjs";
+import { init, main } from "../build/dev/javascript/fencing/fencing.mjs";
 let state = init();
 addEventListener("keydown", (event) => {
   if (event.repeat) return;

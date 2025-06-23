@@ -17,4 +17,5 @@ gleam test
 
 to serve html (without live-server extension):
 deno run --allow-net --allow-read server.ts
+bun add -d bun-html-live-reload
 ````

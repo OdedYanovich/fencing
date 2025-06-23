@@ -4,7 +4,7 @@ pub fn main(state, key) {
   let state =
     state
     + case key {
-      "k" -> 1
+      "k" -> 2
       "j" -> -1
       _ -> 0
     }
