@@ -8,6 +8,8 @@ his advantages will become clearer as the project will scale.
 ## Development
 
 ```sh
+bun ./index.html
+
 # build js code: 
 gleam build 
 
