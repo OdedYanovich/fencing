@@ -1,3 +1,23 @@
 #counter {
 	color: red;
 }
+
+#scene {
+	position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+	width: 100vw;
+	height: 100vh;
+	display: block;
+}
+
+#ui {
+	display: grid;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+}
+
+/* .top { */
+/* 	position: relative; */
+/* } */
