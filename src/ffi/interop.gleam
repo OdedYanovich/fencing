@@ -1,5 +1,14 @@
-@external(javascript, "./js/interop.mjs", "updateCounter")
-pub fn update_counter(counter: Int) -> Nil
+@external(javascript, "./js/main.mjs", "getTime")
+pub fn get_time() -> Float
+
+@external(javascript, "./js/main.mjs", "timer")
+pub fn timer(callback: fn() -> Nil, delay: Int) -> Nil
+
+@external(javascript, "./js/main.mjs", "setStorage")
+pub fn set_storage(key: String, val: Int) -> Nil
+
+@external(javascript, "./js/main.mjs", "getStorage")
+pub fn get_storage(key: String) -> any
 
 @external(javascript, "./js/interop.mjs", "screenWidth")
 pub fn screen_width() -> Int

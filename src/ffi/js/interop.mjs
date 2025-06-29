@@ -1,6 +1,12 @@
-let counter = document.getElementById("counter");
-export function updateCounter(c) {
-	counter.textContent = c;
+export function getTime() { return performance.now() }
+export function timer(callback, delay) {
+	setTimeout(callback, delay)
+}
+export function setStorage(name, val) {
+	localStorage.setItem(name, val)
+}
+export function getStorage(name) {
+	return parseInt(localStorage.getItem(name))
 }
 const scene = document.getElementById("scene")
 const ctx = scene.getContext("2d")
@@ -9,7 +15,6 @@ function resizeCanvas() {
 	scene.height = window.innerHeight;
 	setColor(0, 0, 0)
 	ctx.fillRect(0, 0, window.innerWidth, window.innerHeight)
-
 }
 window.addEventListener("resize", resizeCanvas);
 resizeCanvas();

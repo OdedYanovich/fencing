@@ -1,9 +1,3 @@
-# Factorio (inspired)
-
-Hi Iden, this project is using basic futures to demonstrate the tech's ability
-to be used for front end development. The structure of the code may looks odd,
-his advantages will become clearer as the project will scale.
-
 ````
 ## Development
 
@@ -17,7 +11,15 @@ Run the tests:
 gleam test
 
 
-to serve html (without live-server extension):
-deno run --allow-net --allow-read server.ts
-bun add -d bun-html-live-reload
+live-server --port=3000 --host=127.0.0.1
+pkill -f live-server
+
 ````
+plans:
+
+add animations (css and canvas)
+menu's enemy symbol
+foil (sword)
+timing
+hp
+svg path
